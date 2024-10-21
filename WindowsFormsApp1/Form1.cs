@@ -124,17 +124,17 @@ namespace WindowsFormsApp1
         }
         private void RestartGame()
         {
-            // Başlangıç değerlerini sıfırlayın
+            // Başlangıç değerlerini sıfırlıyoruz
             score = 0;
             bird.Top = 100; // Kuşun başlangıç yüksekliği
 
-            // Boruları yeniden konumlandırın
+            // Boruları yeni oyun için konumlandırdık
             pipe.Left = 800; // Boru başlangıç konumu
             pipeDown.Left = 800; // Üst boru başlangıç konumu
 
             timer.Start(); // Timer'ı başlat
-            scoreInput.Text = "Score: " + score; // Skoru sıfırlayın
-            recordInput.Text = "Rekor: " + record;
+            scoreInput.Text = "Score: " + score; // Skoru sıfır yaptık
+            recordInput.Text = "Rekor: " + record; //Rekor da son rekor ne ise o olarak yazıldı
         }
 
         private void record_Click(object sender, EventArgs e)
